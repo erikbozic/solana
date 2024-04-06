@@ -933,7 +933,7 @@ impl TryFrom<u8> for ShredVariant {
     }
 }
 
-pub(crate) fn recover(
+pub fn recover(
     shreds: Vec<Shred>,
     reed_solomon_cache: &ReedSolomonCache,
 ) -> Result<Vec<Shred>, Error> {
